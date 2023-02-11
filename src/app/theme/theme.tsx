@@ -46,7 +46,6 @@ const theme = extendTheme({
           borderWidth: "1px",
           borderColor: "transparent",
           letterSpacing: 1,
-
           _hover: {
             backgroundColor: "transparent",
             color: "primary",

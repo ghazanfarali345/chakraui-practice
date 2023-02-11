@@ -25,12 +25,12 @@ function Hero() {
               fontSize={64}
               my="1rem"
               lineHeight={1.5}
-              textShadow="0 1.5px #c7c7c7"
+              textShadow="0 2px #c7c7c7"
             >
-              Let's Find The Right{" "}
+              Let&apos;s Find The Right{" "}
               <chakra.span color="primary">Course</chakra.span> For you
             </Heading>
-            <Text color="light.1" mt="2rem">
+            <Text color="light.1" mt="2rem" fontSize={18}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               dignissim, sem non convallis molestie.
             </Text>

@@ -17,7 +17,7 @@ export default function RootLayout({
       <ChakraProvider theme={theme}>
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </ChakraProvider>
     </>
   );
