@@ -33,9 +33,21 @@ function Slider() {
         </GridItem>
         <GridItem h={362}>
           <Flex gap={10}>
-            <SliderCard />
-            <SliderCard />
-            <SliderCard />
+            <SliderCard
+              heading="Professional Teacher"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie."
+              image="/images/user-icon.svg"
+            />
+            <SliderCard
+              heading="Course Certificate"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie."
+              image="/images/hat-icon.svg"
+            />
+            <SliderCard
+              heading="Interesting learning"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie."
+              image="/images/badge-icon.svg"
+            />
           </Flex>
         </GridItem>
       </Grid>

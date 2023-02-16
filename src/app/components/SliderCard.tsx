@@ -1,6 +1,12 @@
 import { Box, Text, Heading, Image, Icon } from "@chakra-ui/react";
 
-function SliderCard() {
+type propTypes = {
+  heading: string;
+  description: string;
+  image: string;
+};
+
+function SliderCard({ heading, description, image }: propTypes) {
   return (
     <Box
       bg="primary"
@@ -21,16 +27,15 @@ function SliderCard() {
         alignItems={"center"}
         justifyContent="center"
       >
-        <Image src="/images/user-icon.svg" m="auto" />
+        <Image src={image && image} m="auto" />
       </Box>
 
       <Heading color="white" fontWeight="bold" fontSize={18} fontFamily="Inter">
-        Professional Teacher
+        {heading && heading}
       </Heading>
 
       <Text color="light.2" mt="1.5rem" fontSize={14}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-        dignissim, sem non convallis molestie.
+        {description && description}
       </Text>
     </Box>
   );
