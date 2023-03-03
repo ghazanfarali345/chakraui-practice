@@ -19,7 +19,7 @@ let hoverEffectForNavbar = {
 function Header() {
   return (
     <Box bg="white" boxShadow="base" py={4}>
-      <Container maxW="1140px">
+      <Container maxW="80%">
         <Flex justifyContent="space-between">
           <Image src="/images/logo.svg" />
           <Flex gap={7} alignItems="center">

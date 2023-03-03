@@ -12,7 +12,7 @@ import SliderCard from "./SliderCard";
 
 function Slider() {
   return (
-    <Container maxW={1300} py="4rem" m="auto">
+    <Container maxW={"80%"} py="4rem" m="auto">
       <Grid templateColumns="1fr 2fr">
         <GridItem h={362}>
           <Text color="primary">What We Give</Text>

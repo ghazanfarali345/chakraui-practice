@@ -13,12 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <ChakraProvider theme={theme}>
-        <Header />
-        {children}
-        {/* <Footer /> */}
-      </ChakraProvider>
-    </>
+    <html lang="en">
+      <body>
+        <ChakraProvider theme={theme}>
+          <Header />
+          {children}
+          <Footer />
+        </ChakraProvider>
+      </body>
+    </html>
   );
 }

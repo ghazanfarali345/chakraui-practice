@@ -21,11 +21,13 @@ const theme = extendTheme({
       1: "#101928",
       2: "#141E32",
       3: "#000000",
+      4: "#646464",
     },
     light: {
       1: "#969696",
       2: "#DDDDDD",
       3: "#A4A4A4",
+      4: "#F4F4F4",
     },
     white: "#FFFFFF",
     yellow: "#F0C932",
