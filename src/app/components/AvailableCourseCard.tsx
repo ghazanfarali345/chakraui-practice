@@ -22,13 +22,13 @@ function AvailableCourseCard({
       position="relative"
       boxShadow="2xl"
       borderRadius="10"
-      minWidth={"328px"}
+      minWidth={{ lg: "328px" }}
     >
       <Box bg={"primary"} p="2" position={"absolute"} top={5}>
         <Text
           color="white"
           fontWeight={"bold"}
-          fontSize="16px"
+          fontSize={{ base: "11px", lg: "16px" }}
           letterSpacing={1}
         >
           Best course
@@ -41,7 +41,7 @@ function AvailableCourseCard({
           top="-45px"
           right="4"
           color="white"
-          fontSize={"22px"}
+          fontSize={{ base: "14px", lg: "22px" }}
           fontWeight="bold"
           lineHeight={"28px"}
         >

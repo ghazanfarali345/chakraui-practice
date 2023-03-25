@@ -23,7 +23,7 @@ function Footer() {
   return (
     <Box bg={"bgDark"} mt={"80px"} color="white" py="100px">
       <Container maxW={"80%"}>
-        <Grid templateColumns={"2fr 3fr"} gap={"149px"}>
+        <Grid templateColumns={{ lg: "2fr 3fr" }} gap={"149px"}>
           <GridItem>
             <Box>
               <Image src="/images/logo-footer.svg" alt="logo" />
@@ -83,7 +83,9 @@ function Footer() {
             </Box>
           </GridItem>
           <GridItem>
-            <Grid templateColumns={"repeat(4, 1fr)"}>
+            <Grid
+              templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            >
               <GridItem>
                 <UnorderedList spacing={3} listStyleType={"none"}>
                   <ListItem fontSize={18} fontWeight="bold" mb={5}>

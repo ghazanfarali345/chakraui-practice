@@ -13,9 +13,13 @@ import {
 
 function SelectCourse() {
   return (
-    <Box bg="primary" p={4}>
+    <Box bg="primary" p={{ base: 1, lg: 4 }}>
       <Container maxW="1140px">
-        <Grid templateColumns="repeat(2, 1fr)" alignItems="center" gap={20}>
+        <Grid
+          templateColumns={{ lg: "repeat(2, 1fr)" }}
+          alignItems="center"
+          gap={20}
+        >
           <GridItem
             // bg="green"
             position="relative"
@@ -71,15 +75,28 @@ function SelectCourse() {
           </GridItem>
           <GridItem>
             <Text color="yellow">SELECTED COURSE</Text>
-            <Heading fontSize={40} color={"white"} my={4} lineHeight={1.5}>
+            <Heading
+              fontSize={{ md: 20, lg: 40 }}
+              color={"white"}
+              my={4}
+              lineHeight={1.5}
+            >
               People Taking <br />
               Courses
             </Heading>
-            <Text color="light.2">
+            <Text
+              color="light.2"
+              fontSize={{ base: 13 }}
+              display="flex"
+              flexWrap={"wrap"}
+            >
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit. Etiam dignissim, sem non convallis molestie.
             </Text>
-            <Grid templateColumns="repeat(3, 1fr)" mt={5}>
+            <Grid
+              templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+              mt={5}
+            >
               <GridItem>
                 <Text color="yellow" fontSize={24} fontWeight="bold">
                   6000
@@ -92,7 +109,7 @@ function SelectCourse() {
                 </Text>
                 <Text color="light.2">People Views</Text>
               </GridItem>
-              <GridItem>
+              <GridItem mt={{ base: "10px", lg: "none" }}>
                 <Text color="yellow" fontSize={24} fontWeight="bold">
                   6000
                 </Text>

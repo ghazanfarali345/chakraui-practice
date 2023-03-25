@@ -52,7 +52,14 @@ function TestimonialCard({
         <Image src={starImage} />
         <Image src={starImage} />
       </Flex>
-      <Box pt={5} pl={2} fontSize={18} color="dark.4" maxW="588px" pr={"66px"}>
+      <Box
+        pt={5}
+        pl={2}
+        fontSize={{ base: 12, lg: 18 }}
+        color="dark.4"
+        maxW="588px"
+        pr={"66px"}
+      >
         &quot; {paragraph} &quot;
       </Box>
     </Box>

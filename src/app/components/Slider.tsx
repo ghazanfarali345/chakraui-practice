@@ -13,26 +13,28 @@ import SliderCard from "./SliderCard";
 function Slider() {
   return (
     <Container maxW={"80%"} py="4rem" m="auto">
-      <Grid templateColumns="1fr 2fr">
-        <GridItem h={362}>
+      <Grid templateColumns={{ lg: "1fr 2fr" }}>
+        <GridItem h={{ base: 210, lg: 362 }}>
           <Text color="primary">What We Give</Text>
           <Heading
             my="1rem"
             fontWeight={"bold"}
-            fontSize={40}
-            // pr={10}
+            fontSize={{ base: 20, lg: 40 }}
             maxW={290}
             lineHeight={1.5}
           >
             What do You Get From Us
           </Heading>
-          <Text color="light.1" mt="1rem">
+          <Text color="light.1" mt="1rem" display="flex" flexWrap={"wrap"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             dignissim, sem non convallis molestie.
           </Text>
         </GridItem>
-        <GridItem h={362}>
-          <Flex gap={10}>
+        <GridItem>
+          <Flex
+            gap={{ base: 4, lg: 10 }}
+            flexDir={{ base: "column", lg: "row" }}
+          >
             <SliderCard
               heading="Professional Teacher"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie."

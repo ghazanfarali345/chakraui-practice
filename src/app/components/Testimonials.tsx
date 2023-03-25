@@ -19,7 +19,7 @@ function Testimonials() {
       <Heading textAlign={"center"} mb={"40px"}>
         Testimonials
       </Heading>
-      <Grid templateColumns={"repeat(2, 1fr)"} gap={5}>
+      <Grid templateColumns={{ lg: "repeat(2, 1fr)" }} gap={5}>
         <GridItem>
           <TestimonialCard
             image="/images/testimonial-img1.svg"

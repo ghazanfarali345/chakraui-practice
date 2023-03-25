@@ -16,9 +16,9 @@ function AvailabledCourse() {
   return (
     <Box p={5} pt={20}>
       <Container maxW="80%">
-        <Grid templateColumns="repeat(2, 1fr)" gap={20}>
+        <Grid templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }} gap={20}>
           <GridItem>
-            <Grid templateColumns="repeat(2, 2fr )" gap="10">
+            <Grid templateColumns={{ lg: "repeat(2, 2fr )" }} gap="10">
               <GridItem>
                 <AvailableCourseCard
                   title="HTML & CSS"
